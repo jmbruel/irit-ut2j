@@ -1,0 +1,37 @@
+include::definitions.txt[]
+include::asciidoc.conf[]
+//=====================================
+= Compte-rendu du CODIR du 4 septembre 2015
+
+Présents : {Beylot} (INP), {Sanza} (Tarbes),
+{Hanachi} (UT1), {joly}, {jeissel}, {sibilla}, {dayde}, {BC}, {jmb}
+
+Excusés : {Bastide} (Castres)
+
+== Ordre Du Jour
+
+Points à l'ordre du jour de cette réunion :
+
+. Demandes de moyens
+
+== Demandes de moyens
+
+* Enseignants/Chercheurs
+** Pas de nouveau depuis le traitement des postes potentiels en juin
+* Moyens
+** Demande de secrétariat
+
+[NOTE]
+====
+Ceci est mon premier CODIR en tant que représentant de l'{ut2j}. Ca a été l'occasion
+de la passation avec Bernard.
+====
+
+== Règles doctorat
+
+- Co-direction => obligation de montage convention si hors des tutelles.
+
+== Divers
+
+- MIB => possible de faire des demandes de soutien (moyens humains pourquoi pas)
+- L'IUT devrait s'appuyer plus sur le labo (appel du pied très clair)
