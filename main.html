@@ -416,7 +416,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">Jean-Michel Bruel (bruel@irit.fr)</span><br>
 <span id="revnumber">version 1.0,</span>
-<span id="revdate">2015-09-21, 2015-04-28</span>
+<span id="revdate">2015-10-07, 2015-04-28</span>
 <br><span id="revremark">First draft</span>
 </div>
 <div id="toc" class="toc2">
@@ -838,6 +838,53 @@ en charge une partie des frais du co-auteur qui s&#8217;en charge.</p>
 </table>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_comment_faire_croire_à_ma_machine_qu_elle_est_à_l_irit">3.3.4. Comment faire croire à ma machine qu&#8217;elle est à l&#8217;IRIT?</h4>
+<div class="paragraph">
+<p>Je n&#8217;arrive pas à accéder aux publications des revues auxquelles
+l&#8217;IRIT est abonné?</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABMCAYAAADHl1ErAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAP+SURBVHhe7ZtLqBRHFIavDxSRYDAYkCAI0QTRBBHUhVlE0YgPxDeIEgIRRJTsXLgRN4JmkV0QREJ0IwnxkaBLX6gIakQRQRFXCoEQEkQUjc//6+kix6KvM/dO12S653zw0Y+Z6ZmqW111+lTdPsdxHMdxHMdxHMdxnK5iWL7tZmbJZ/JRduQ05YRc09h1mjFbvpLfZ0dOUy5JKuxqdtQDDM23g2GJpLLwiRwpa882uaqxO2BC6wp+LmsPhaSwx+QETrSIbV3BnbL2DJd/Sgr8QH4jW7lN49aFZ2RP8KO0Bb8gp8r+oJJ5/VP5mVwp98iLsiegwLbC8F+5Q6Zmptzc2K0OjG6McrbC6NMmybIZIb+Qe+U9yXctk6UxJN+m5ohcIR/LjfKQjBkvF8nJ+T78Ie9L+q+bnCjgHblAcv2l8l0ZOCxXN3arxVfybzknO3oTbtmz8rm0rTCWCtsk40FjhuTa8fv/kh/ISvK+5DHH8omkI48L2swbkkqyMEDwcG7fR0uuDQslLcAWcCBSOculhePwOi22NiyWjJK2AgbjSxlX2k+Sa0/JjmoAt+E/sqgCBuNDOV0GGHk7Ea50jKIIvl25Zi1ZL4sKXIZfyspB0EjYQIbiV3lOWlK0rmAlWtkYSaC5SxJYEpTaQtgs6URpX0sh39HV0NmSby/68Wjz8Ftk0XvK9GuZnHYyotckeSsC0tOciLibb+HDfJsSm2/j+bWdsvVLGRel/5gn50obMD7NtzAu36bEfgfhxXVJKy+14sq8GP0YGVYegC9zosPYnD/70+TP8nfJndD1kAgMfCeL+p0ytSnskBq3hjuhLZLc5zlkHwK2P0sF+a9AURdAMvGkDHdCV9PpsIKQJn6d9NA+uUGmSF6WTicDV0Zw5g6+lWRcx8rKQRKxqLBlyLUto/JtpaG/TNHKrkg7wFQanittf5E6vVNpPpI8X/6SHf1HygRipTklQ+FI7VhSpKgrDUO3LSC3TjxxUeYkCMdMtFQSgsawnsLKVFhcUGCajdxZs2m2W7Jomo2K59rxSJmEFBO5TESsbexmsD6VCPs3eVzaiNzC5C3928f5PoSJXD5fNJHLM+IB+Z48Kqn8SkHfRGvgFqSzXyftTHRZkMr5QdoWWLlFd9wq2yV/ddLVKWGBSZzhxeQtrMxl5/zg8/KOfMGJFqFV3JbMXjO1z2/iUYa+kDVlRdciWD0oWRZlk5O0Mha61B4yCHFriZ8P+4MZozDIsK1N1P82yGXFFTaQpB8hxX7J53pqLWyw1dYVM19ubezWG/oxu+iuEinl/xvirHZaV88RsqRFi+66hm76b7bRubuzI6cpjHT8q5/jOI7jOI7jOI7jOI7TIn19rwHxRFgzUciFPgAAAABJRU5ErkJggg==" alt="Note">
+</td>
+<td class="content">
+<div class="title">Réponse</div>
+<div class="paragraph">
+<p>Pour être identifié à l&#8217;IRIT et visualiser les publies dans <a href="http://www.sciencedirect.com/">ScienceDirect</a> par exemple, il est possible de faire un tunnel <code>SSH</code> et passer par le proxy :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="shell">ssh sash.irit.fr -l &lt;login irit&gt; -L12345:proxy.irit.fr:8001 -N</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Que l&#8217;on peut mettre dans une boucle while pour éviter la déconnexion :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="shell">while true ; do ssh sash.irit.fr -l &lt;login irit&gt; -L12345:proxy.irit.fr:8001 -N ; done</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Sous Windows, utiliser <a href="http://www.putty.org/">PuTTY</a> pour faire la même chose (dans <code>SSH &gt; Tunnels</code>)</p>
+</div>
+<div class="paragraph">
+<p>Sous Linux comme Windows, vous pouvez passer par votre couple de clé publique/privée pour ne pas avoir à taper le mot de passe.</p>
+</div>
+<div class="paragraph">
+<p>Une fois le tunnel établi, dans les proxys du navigateur web, indiquer <code>127.0.0.1:12345</code> comme proxy pour emprunter le tunnel.</p>
+</div>
+<div class="paragraph">
+<p>Note: il est possible d&#8217;utiliser un plugin comme <a href="https://addons.mozilla.org/fr/firefox/addon/proxy-selector/">proxy selector</a> (module firefox) pour activer/désactiver le proxy sur un simple clic.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -861,7 +908,7 @@ Pour l&#8217;instant ce document est libre d&#8217;utilisation et géré par la 
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2015-09-21 14:56:13 CEST
+Last updated 2015-10-07 17:27:17 CEST
 </div>
 </div>
 </body>
