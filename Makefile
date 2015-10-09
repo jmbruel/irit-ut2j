@@ -27,6 +27,11 @@ $(OUTPUT)/%.slides.html: %.$(EXT)
 	@echo '==> Compiling asciidoc files to generate Deckjs'
 	$(ASCIIDOC) -a slides -b deckjs -a deckjs_transition=horizontal-slide -a deckjs_theme=web-2.0 -o $@ $<
 
+deploy:
+	cp main.html index.html
+	git commit -am "deploy updates"
+	git push
+	
 clean:
 	@echo '==> Cleaning compilation files'
 	@# fichiers de compilation latex
