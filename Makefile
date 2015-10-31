@@ -6,7 +6,7 @@ IMAGESDIR=$(MAINDIR)/images
 STYLE=/Users/bruel/dev/POO/COO/stylesheets/golo-jmb.css
 ASCIIDOC=asciidoc -a icons -a iconsdir=$(ICONSDIR) -a imagesdir=$(IMAGESDIR) -a stylesheet=$(STYLE) -a data-uri
 #ASCIIDOC=asciidoc -a icons -a iconsdir=$(ICONSDIR) -a data-uri
-ASCIIDOCTOR=asciidoctor -a icons -a iconsdir=$(ICONSDIR)  -a imagesdir=$(IMAGESDIR) -a data-uri -a toc2
+ASCIIDOCTOR=asciidoctor -a imagesdir=$(IMAGESDIR) -a data-uri -a toc2
 EXT=asc
 OUTPUT=.
 DEP=definitions.txt asciidoc.conf
@@ -31,7 +31,7 @@ deploy:
 	cp main.html index.html
 	git commit -am "deploy updates"
 	git push
-	
+
 clean:
 	@echo '==> Cleaning compilation files'
 	@# fichiers de compilation latex
