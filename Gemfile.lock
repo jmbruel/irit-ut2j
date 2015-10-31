@@ -42,7 +42,9 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.0.8)
+    eventmachine (1.0.8-java)
     ffi (1.9.10)
+    ffi (1.9.10-java)
     formatador (0.2.5)
     git (1.2.9.1)
     guard (2.13.0)
@@ -61,9 +63,11 @@ GEM
     haml (4.0.7)
       tilt
     hitimes (1.2.3)
+    hitimes (1.2.3-java)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
     http_parser.rb (0.6.0)
+    http_parser.rb (0.6.0-java)
     listen (2.10.1)
       celluloid (~> 0.16.0)
       rb-fsevent (>= 0.9.3)
@@ -80,11 +84,19 @@ GEM
     oga (0.3.4)
       ast
       ruby-ll (~> 2.1)
+    oga (0.3.4-java)
+      ast
+      ruby-ll (~> 2.1)
     parallel (1.6.1)
     pry (0.10.2)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry (0.10.2-java)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+      spoon (~> 0.0)
     rack (1.6.4)
     rb-fsevent (0.9.6)
     rb-inotify (0.9.5)
@@ -96,20 +108,30 @@ GEM
     ruby-ll (2.1.2)
       ansi
       ast
+    ruby-ll (2.1.2-java)
+      ansi
+      ast
     sass (3.4.18)
     shellany (0.0.1)
     slop (3.6.0)
+    spoon (0.0.4)
+      ffi
     thor (0.19.1)
     tilt (2.0.1)
     timers (4.0.4)
       hitimes
     unf (0.1.4)
       unf_ext
+    unf (0.1.4-java)
     unf_ext (0.0.7.1)
 
 PLATFORMS
+  java
   ruby
 
 DEPENDENCIES
   asciidoctor
   awestruct
+
+BUNDLED WITH
+   1.10.6
