@@ -2,7 +2,7 @@
 MAIN=main
 MAINDIR=/Users/bruel/Dropbox/dev/IRIT-UTM
 ICONSDIR=images/icons
-IMAGESDIR=$(MAINDIR)/images
+IMAGESDIR=images
 STYLE=/Users/bruel/dev/POO/COO/stylesheets/golo-jmb.css
 ASCIIDOC=asciidoc -a icons -a iconsdir=$(ICONSDIR) -a imagesdir=$(IMAGESDIR) -a stylesheet=$(STYLE) -a data-uri
 #ASCIIDOC=asciidoc -a icons -a iconsdir=$(ICONSDIR) -a data-uri
