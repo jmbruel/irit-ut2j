@@ -1,0 +1,27 @@
+include::../definitions.txt[]
+include::asciidoc.conf[]
+:icons: font
+//=====================================
+= Compte-rendu du CODIR du 9 octobre 2015
+
+Présents : {Bastide} (Castres), {joly}, {jeissel}, {sibilla}, {dayde}, {jmb}
+
+Excusés : {Beylot} (INP), {Sanza} (Tarbes), {Hanachi} (UT1)
+
+== Ordre Du Jour
+
+Points à l'ordre du jour de cette réunion :
+
+.
+
+== Divers
+
+- C'est un peu le flou à l'UPS depuis la démission du président Montubert.
+- Nouvel appel du pied de la direction au sujet de la {mib}, qui pourrait faire partie des plateformes du labo.
+
+WARNING: Attention à vos recrutements d'étudiants étranger : il faut absolument
+avoir l'aval du FSD (Fonctionnaire Sécurité Défense). Contactez {chantalMorand}.
+Un cas récent d'étudiant embauché, arrivé, contrat signé et finalement refusé
+par le FSD.
+
+- L'IUT devrait s'appuyer plus sur le labo (appel du pied très clair)
