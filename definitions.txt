@@ -17,6 +17,7 @@
 :cea: http://www-list.cea.fr/[CEA LIST]
 :cdo: http://www.eclipse.org/cdo/[CDO]
 :cucumber: link:http://cukes.info/[Cucumber]
+:dan: https://github.com/mojavelinux[Dan Allen]
 :deckjs: http://houqp.github.io/asciidoc-deckjs/[deckjs]
 :deckjsite: http://houqp.github.io/asciidoc-deckjs/[deckjs]
 :deckjsweb: http://houqp.github.io/asciidoc-deckjs/[deckjs]
