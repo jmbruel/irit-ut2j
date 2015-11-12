@@ -16,12 +16,16 @@ all: $(OUTPUT)/main.html
 $(OUTPUT)/%.html: %.adoc $(DEP)
 	@echo '==> Compiling asciidoc files to generate HTML'
 	$(ASCIIDOCTOR) -b html5 -a numbered -a eleve -o $@ $<
+
 $(OUTPUT)/%.html: %.$(EXT) $(DEP)
 	@echo '==> Compiling asciidoc files to generate HTML'
 	$(ASCIIDOCTOR) -b html5 -a numbered -a eleve -o $@ $<
+	cp main.html index.html
+
 $(OUTPUT)/%.corrige.html: %.$(EXT)
 	@echo '==> Compiling asciidoc files to generate Corrections'
 	$(ASCIIDOCTOR) -b html5 -a numbered -a correction -a prof -o $@ $<
+
 $(OUTPUT)/%.slides.html: %.$(EXT)
 	@echo '==> Compiling asciidoc files to generate Deckjs'
 	$(ASCIIDOC) -a slides -b deckjs -a deckjs_transition=horizontal-slide -a deckjs_theme=web-2.0 -o $@ $<
