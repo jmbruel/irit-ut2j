@@ -13,9 +13,6 @@ DEP=definitions.txt asciidoc.conf
 
 all: $(OUTPUT)/main.html
 
-$(OUTPUT)/%.html: %.adoc $(DEP)
-	@echo '==> Compiling asciidoc files to generate HTML'
-	$(ASCIIDOCTOR) -b html5 -a numbered -a eleve -o $@ $<
 
 $(OUTPUT)/%.html: %.$(EXT) $(DEP)
 	@echo '==> Compiling asciidoc files to generate HTML'
