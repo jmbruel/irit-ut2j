@@ -41,7 +41,9 @@ GEM
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
+    eventmachine (1.0.8)
     eventmachine (1.0.8-java)
+    ffi (1.9.10)
     ffi (1.9.10-java)
     formatador (0.2.5)
     git (1.2.9.1)
@@ -62,9 +64,11 @@ GEM
       multi_json (~> 1.8)
     haml (4.0.7)
       tilt
+    hitimes (1.2.3)
     hitimes (1.2.3-java)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
+    http_parser.rb (0.6.0)
     http_parser.rb (0.6.0-java)
     listen (2.10.1)
       celluloid (~> 0.16.0)
@@ -79,10 +83,17 @@ GEM
     notiffany (0.0.8)
       nenv (~> 0.1)
       shellany (~> 0.0)
+    oga (0.3.4)
+      ast
+      ruby-ll (~> 2.1)
     oga (0.3.4-java)
       ast
       ruby-ll (~> 2.1)
     parallel (1.6.1)
+    pry (0.10.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
     pry (0.10.3-java)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -96,6 +107,9 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
+    ruby-ll (2.1.2)
+      ansi
+      ast
     ruby-ll (2.1.2-java)
       ansi
       ast
@@ -108,14 +122,18 @@ GEM
     tilt (2.0.1)
     timers (4.0.4)
       hitimes
+    unf (0.1.4)
+      unf_ext
     unf (0.1.4-java)
+    unf_ext (0.0.7.1)
 
 PLATFORMS
   java
+  ruby
 
 DEPENDENCIES
   asciidoctor
   awestruct
 
 BUNDLED WITH
-   1.10.6
+   1.11.2
