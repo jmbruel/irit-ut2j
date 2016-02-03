@@ -1,0 +1,11 @@
+= irit-ut2j
+
+Conseils et infos pour les chercheurs IRIT/UT2J
+
+Pour contribuer :
+
+. Cloner le dépôt
+. Améliorer/enrichier le fichier `main.asc`
+. Proposer une `pull request`
+
+Ou envoyer un mail à bruel@irit.fr.
