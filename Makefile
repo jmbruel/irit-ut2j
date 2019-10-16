@@ -8,7 +8,7 @@ ASCIIDOC=asciidoc -a icons -a iconsdir=$(ICONSDIR) -a imagesdir=$(IMAGESDIR) -a 
 ASCIIDOCTOR=asciidoctor -a icons=font -a imagesdir=$(IMAGESDIR) -a data-uri -a toc2
 EXT=asc
 OUTPUT=.
-DEP=definitions.txt asciidoc.conf
+DEP=definitions.txt asciidoc.conf *.asc
 #-----------------------------------------------------
 
 all: $(OUTPUT)/main.html
