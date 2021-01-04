@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.10">
-<meta name="author" content="Jean-Michel Bruel (bruel@irit.fr)">
+<meta name="generator" content="Asciidoctor 2.0.11">
+<meta name="author" content="Thierry Val (thierry.val@univ-tlse2.fr)">
 <title>IRIT-UT2J : FAQ &amp; infos utiles</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -48,7 +48,7 @@ textarea{overflow:auto;vertical-align:top}
 table{border-collapse:collapse;border-spacing:0}
 *,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
 html,body{font-size:100%}
-body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
 a:hover{cursor:pointer}
 img,object,embed{max-width:100%;height:auto}
 object,embed{height:100%}
@@ -63,10 +63,8 @@ img{-ms-interpolation-mode:bicubic}
 img,object,svg{display:inline-block;vertical-align:middle}
 textarea{height:auto;min-height:50px}
 select{width:100%}
-.center{margin-left:auto;margin-right:auto}
-.stretch{width:100%}
 .subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
-div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0}
 a{color:#2156a5;text-decoration:underline;line-height:inherit}
 a:hover,a:focus{color:#1d4b8f}
 a img{border:0}
@@ -114,11 +112,14 @@ table tr.even,table tr.alt{background:#f8f8f7}
 table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
 h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
 h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
 .clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
 .clearfix::after,.float-group::after{clear:both}
-:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
-:not(pre)>code.nobreak{word-wrap:normal}
-:not(pre)>code.nowrap{white-space:nowrap}
+:not(pre).nobreak{word-wrap:normal}
+:not(pre).nowrap{white-space:nowrap}
+:not(pre).pre-wrap{white-space:pre-wrap}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
 pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
 pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
 pre>code{display:block}
@@ -183,7 +184,7 @@ body.toc2.toc-right{padding-left:0;padding-right:20em}}
 #content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
 #content #toc>:first-child{margin-top:0}
 #content #toc>:last-child{margin-bottom:0}
-#footer{max-width:100%;background:rgba(0,0,0,.8);padding:1.25em}
+#footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
 #footer-text{color:rgba(255,255,255,.8);line-height:1.44}
 #content{margin-bottom:.625em}
 .sect1{padding-bottom:.625em}
@@ -216,7 +217,7 @@ table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font
 .sidebarblock>:last-child{margin-bottom:0}
 .sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
 .exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
-.literalblock pre,.listingblock>.content>pre{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;overflow-x:auto;padding:1em;font-size:.8125em}
+.literalblock pre,.listingblock>.content>pre{-webkit-border-radius:4px;border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
 @media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
 @media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
 .literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class="highlight"],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
@@ -262,21 +263,21 @@ pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
 .quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
 .quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
-table.tableblock{max-width:100%;border-collapse:separate}
+table.tableblock{max-width:100%}
 p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:1.25em}
 td.tableblock>.content>:last-child{margin-bottom:-1.25em}
-td.tableblock>.content>:last-child.sidebarblock{margin-bottom:0}
 table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
-table.grid-all>thead>tr>.tableblock,table.grid-all>tbody>tr>.tableblock{border-width:0 1px 1px 0}
-table.grid-all>tfoot>tr>.tableblock{border-width:1px 1px 0 0}
-table.grid-cols>*>tr>.tableblock{border-width:0 1px 0 0}
-table.grid-rows>thead>tr>.tableblock,table.grid-rows>tbody>tr>.tableblock{border-width:0 0 1px}
-table.grid-rows>tfoot>tr>.tableblock{border-width:1px 0 0}
-table.grid-all>*>tr>.tableblock:last-child,table.grid-cols>*>tr>.tableblock:last-child{border-right-width:0}
-table.grid-all>tbody>tr:last-child>.tableblock,table.grid-all>thead:last-child>tr>.tableblock,table.grid-rows>tbody>tr:last-child>.tableblock,table.grid-rows>thead:last-child>tr>.tableblock{border-bottom-width:0}
+table.grid-all>*>tr>*{border-width:1px}
+table.grid-cols>*>tr>*{border-width:0 1px}
+table.grid-rows>*>tr>*{border-width:1px 0}
 table.frame-all{border-width:1px}
+table.frame-ends{border-width:1px 0}
 table.frame-sides{border-width:0 1px}
-table.frame-topbot,table.frame-ends{border-width:1px 0}
+table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-child>*{border-top-width:0}
+table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
+table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
+table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
 table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd),table.stripes-even tr:nth-of-type(even),table.stripes-hover tr:hover{background:#f8f8f7}
 th.halign-left,td.halign-left{text-align:left}
 th.halign-right,td.halign-right{text-align:right}
@@ -386,7 +387,7 @@ a span.icon>.fa{cursor:inherit}
 .admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
 .admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
 .admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
-.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);-webkit-border-radius:100px;border-radius:100px;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);-webkit-border-radius:50%;border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
 .conum[data-value] *{color:#fff!important}
 .conum[data-value]+b{display:none}
 .conum[data-value]::after{content:attr(data-value)}
@@ -413,6 +414,7 @@ thead{display:table-header-group}
 svg{max-width:100%}
 p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
 h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#header,#content,#footnotes,#footer{max-width:none}
 #toc,.sidebarblock,.exampleblock>.content{background:none!important}
 #toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
 body.book #header{text-align:center}
@@ -442,9 +444,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>IRIT-UT2J : FAQ &amp; infos utiles</h1>
 <div class="details">
-<span id="author" class="author">Jean-Michel Bruel (bruel@irit.fr)</span><br>
-<span id="revnumber">version 1.9.1,</span>
-<span id="revdate">2020-01-16</span>
+<span id="author" class="author">Thierry Val (thierry.val@univ-tlse2.fr)</span><br>
+<span id="revnumber">version 2.1.0,</span>
+<span id="revdate">2021-01-04</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -670,7 +672,7 @@ Les documents <a href="http://www.univ-tlse2.fr/">UT2J</a> sont à télécharger
 <div class="ulist">
 <ul>
 <li>
-<p>Remplir l&#8217;OM (disponible <a href="http://ent-utm.univ-tlse2.fr/missions-deplacement-63676.kjsp">ici</a>) et me l&#8217;envoyer (<a href="mailto:jean-michel.bruel@univ-tlse2.fr">JMB</a>) pour signature.</p>
+<p>Remplir l&#8217;OM (disponible <a href="http://ent-utm.univ-tlse2.fr/missions-deplacement-63676.kjsp">ici</a>) et me l&#8217;envoyer (<a href="mailto:thierry.val@univ-tlse2.fr">Thierry Val</a>) pour signature.</p>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -1028,7 +1030,7 @@ Il faut mentionner les demandes précises (vol ou train avec horaires précis
 et nuitée si il y a lieu);</p>
 </li>
 <li>
-<p>la faire signer par <a href="mailto:jean-michel.bruel@univ-tlse2.fr">JMB</a> et transmettre à <a href="mailto:irene.figuerola@univ-tlse2.fr">Irène Figuerola</a>;</p>
+<p>la faire signer par <a href="mailto:thierry.val@univ-tlse2.fr">Thierry Val</a> et transmettre à <a href="mailto:irene.figuerola@univ-tlse2.fr">Irène Figuerola</a>;</p>
 </li>
 <li>
 <p><a href="mailto:irene.figuerola@univ-tlse2.fr">Irène Figuerola</a> contactera ensuite les membres du jury pour leur faire remplir une fiche agent + rib.</p>
@@ -1499,7 +1501,7 @@ Plus d&#8217;information sur le site de l&#8217;IRIT : <a href="https://websecu.
 <p><span class="image"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABMCAYAAADHl1ErAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAP+SURBVHhe7ZtLqBRHFIavDxSRYDAYkCAI0QTRBBHUhVlE0YgPxDeIEgIRRJTsXLgRN4JmkV0QREJ0IwnxkaBLX6gIakQRQRFXCoEQEkQUjc//6+kix6KvM/dO12S653zw0Y+Z6ZmqW111+lTdPsdxHMdxHMdxHMdxnK5iWL7tZmbJZ/JRduQ05YRc09h1mjFbvpLfZ0dOUy5JKuxqdtQDDM23g2GJpLLwiRwpa882uaqxO2BC6wp+LmsPhaSwx+QETrSIbV3BnbL2DJd/Sgr8QH4jW7lN49aFZ2RP8KO0Bb8gp8r+oJJ5/VP5mVwp98iLsiegwLbC8F+5Q6Zmptzc2K0OjG6McrbC6NMmybIZIb+Qe+U9yXctk6UxJN+m5ohcIR/LjfKQjBkvF8nJ+T78Ie9L+q+bnCjgHblAcv2l8l0ZOCxXN3arxVfybzknO3oTbtmz8rm0rTCWCtsk40FjhuTa8fv/kh/ISvK+5DHH8omkI48L2swbkkqyMEDwcG7fR0uuDQslLcAWcCBSOculhePwOi22NiyWjJK2AgbjSxlX2k+Sa0/JjmoAt+E/sqgCBuNDOV0GGHk7Ea50jKIIvl25Zi1ZL4sKXIZfyspB0EjYQIbiV3lOWlK0rmAlWtkYSaC5SxJYEpTaQtgs6URpX0sh39HV0NmSby/68Wjz8Ftk0XvK9GuZnHYyotckeSsC0tOciLibb+HDfJsSm2/j+bWdsvVLGRel/5gn50obMD7NtzAu36bEfgfhxXVJKy+14sq8GP0YGVYegC9zosPYnD/70+TP8nfJndD1kAgMfCeL+p0ytSnskBq3hjuhLZLc5zlkHwK2P0sF+a9AURdAMvGkDHdCV9PpsIKQJn6d9NA+uUGmSF6WTicDV0Zw5g6+lWRcx8rKQRKxqLBlyLUto/JtpaG/TNHKrkg7wFQanittf5E6vVNpPpI8X/6SHf1HygRipTklQ+FI7VhSpKgrDUO3LSC3TjxxUeYkCMdMtFQSgsawnsLKVFhcUGCajdxZs2m2W7Jomo2K59rxSJmEFBO5TESsbexmsD6VCPs3eVzaiNzC5C3928f5PoSJXD5fNJHLM+IB+Z48Kqn8SkHfRGvgFqSzXyftTHRZkMr5QdoWWLlFd9wq2yV/ddLVKWGBSZzhxeQtrMxl5/zg8/KOfMGJFqFV3JbMXjO1z2/iUYa+kDVlRdciWD0oWRZlk5O0Mha61B4yCHFriZ8P+4MZozDIsK1N1P82yGXFFTaQpB8hxX7J53pqLWyw1dYVM19ubezWG/oxu+iuEinl/xvirHZaV88RsqRFi+66hm76b7bRubuzI6cpjHT8q5/jOI7jOI7jOI7jOI7TIn19rwHxRFgzUciFPgAAAABJRU5ErkJggg==" alt="appbar.weather.sun"></span></p>
 </div>
 <div class="paragraph">
-<p>Contacter <a href="mailto:irene.figuerola@univ-tlse2.fr">Irène Figuerola</a> (avec copie à <a href="mailto:jean-michel.bruel@univ-tlse2.fr">JMB</a> pour accord) avec les informations précises :</p>
+<p>Contacter <a href="mailto:irene.figuerola@univ-tlse2.fr">Irène Figuerola</a> (avec copie à <a href="mailto:thierry.val@univ-tlse2.fr">Thierry Val</a> pour accord) avec les informations précises :</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1522,7 +1524,7 @@ Plus d&#8217;information sur le site de l&#8217;IRIT : <a href="https://websecu.
 </div>
 <div class="paragraph">
 <p>L&#8217;impression doit obligatoirement passer par l&#8217;imprimerie de l&#8217;UT2J (Magalie Garros).
-Le service imprimerie établit un devis que <a href="mailto:irene.figuerola@univ-tlse2.fr">Irène Figuerola</a> fais signer par <a href="mailto:jean-michel.bruel@univ-tlse2.fr">JMB</a>.
+Le service imprimerie établit un devis que <a href="mailto:irene.figuerola@univ-tlse2.fr">Irène Figuerola</a> fais signer par <a href="mailto:thierry.val@univ-tlse2.fr">Thierry Val</a>.
 Le délai d&#8217;impression est de 4 à 5 jours ouvrables.</p>
 </div>
 <div class="paragraph">
@@ -1592,7 +1594,7 @@ Pensez à préciser à <a href="mailto:irene.figuerola@univ-tlse2.fr">Irène Fig
 <p><span class="image"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABMCAYAAADHl1ErAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAP+SURBVHhe7ZtLqBRHFIavDxSRYDAYkCAI0QTRBBHUhVlE0YgPxDeIEgIRRJTsXLgRN4JmkV0QREJ0IwnxkaBLX6gIakQRQRFXCoEQEkQUjc//6+kix6KvM/dO12S653zw0Y+Z6ZmqW111+lTdPsdxHMdxHMdxHMdxnK5iWL7tZmbJZ/JRduQ05YRc09h1mjFbvpLfZ0dOUy5JKuxqdtQDDM23g2GJpLLwiRwpa882uaqxO2BC6wp+LmsPhaSwx+QETrSIbV3BnbL2DJd/Sgr8QH4jW7lN49aFZ2RP8KO0Bb8gp8r+oJJ5/VP5mVwp98iLsiegwLbC8F+5Q6Zmptzc2K0OjG6McrbC6NMmybIZIb+Qe+U9yXctk6UxJN+m5ohcIR/LjfKQjBkvF8nJ+T78Ie9L+q+bnCjgHblAcv2l8l0ZOCxXN3arxVfybzknO3oTbtmz8rm0rTCWCtsk40FjhuTa8fv/kh/ISvK+5DHH8omkI48L2swbkkqyMEDwcG7fR0uuDQslLcAWcCBSOculhePwOi22NiyWjJK2AgbjSxlX2k+Sa0/JjmoAt+E/sqgCBuNDOV0GGHk7Ea50jKIIvl25Zi1ZL4sKXIZfyspB0EjYQIbiV3lOWlK0rmAlWtkYSaC5SxJYEpTaQtgs6URpX0sh39HV0NmSby/68Wjz8Ftk0XvK9GuZnHYyotckeSsC0tOciLibb+HDfJsSm2/j+bWdsvVLGRel/5gn50obMD7NtzAu36bEfgfhxXVJKy+14sq8GP0YGVYegC9zosPYnD/70+TP8nfJndD1kAgMfCeL+p0ytSnskBq3hjuhLZLc5zlkHwK2P0sF+a9AURdAMvGkDHdCV9PpsIKQJn6d9NA+uUGmSF6WTicDV0Zw5g6+lWRcx8rKQRKxqLBlyLUto/JtpaG/TNHKrkg7wFQanittf5E6vVNpPpI8X/6SHf1HygRipTklQ+FI7VhSpKgrDUO3LSC3TjxxUeYkCMdMtFQSgsawnsLKVFhcUGCajdxZs2m2W7Jomo2K59rxSJmEFBO5TESsbexmsD6VCPs3eVzaiNzC5C3928f5PoSJXD5fNJHLM+IB+Z48Kqn8SkHfRGvgFqSzXyftTHRZkMr5QdoWWLlFd9wq2yV/ddLVKWGBSZzhxeQtrMxl5/zg8/KOfMGJFqFV3JbMXjO1z2/iUYa+kDVlRdciWD0oWRZlk5O0Mha61B4yCHFriZ8P+4MZozDIsK1N1P82yGXFFTaQpB8hxX7J53pqLWyw1dYVM19ubezWG/oxu+iuEinl/xvirHZaV88RsqRFi+66hm76b7bRubuzI6cpjHT8q5/jOI7jOI7jOI7jOI7TIn19rwHxRFgzUciFPgAAAABJRU5ErkJggg==" alt="appbar.weather.sun"></span></p>
 </div>
 <div class="paragraph">
-<p>Contacter <a href="mailto:irene.figuerola@univ-tlse2.fr">Irène Figuerola</a> (avec copie à <a href="mailto:jean-michel.bruel@univ-tlse2.fr">JMB</a> pour accord) avec les informations précises :</p>
+<p>Contacter <a href="mailto:irene.figuerola@univ-tlse2.fr">Irène Figuerola</a> (avec copie à <a href="mailto:thierry.val@univ-tlse2.fr">Thierry Val</a> pour accord) avec les informations précises :</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1644,7 +1646,7 @@ Pour les étrangers, il faut effectuer une demande au FSD (cf. <a href="#FSD">La
 <p>Pour télécharger l&#8217;installeur d&#8217;eduroam : <a href="https://cat.eduroam.org/" class="bare">https://cat.eduroam.org/</a></p>
 </div>
 <div class="paragraph">
-<p>Aide : <a href="https://services-numeriques.univ-tlse3.fr/reseau-sans-fil-764345.kjsp?RH=1292921459364" class="bare">https://services-numeriques.univ-tlse3.fr/reseau-sans-fil-764345.kjsp?RH=1292921459364</a></p>
+<p>Aide : <a href="https://www.univ-tlse2.fr/wi-fi/reseau-sans-fil-eduroam-142729.kjsp" class="bare">https://www.univ-tlse2.fr/wi-fi/reseau-sans-fil-eduroam-142729.kjsp</a></p>
 </div>
 </td>
 </tr>
@@ -1659,8 +1661,8 @@ Pour les étrangers, il faut effectuer une demande au FSD (cf. <a href="#FSD">La
 <div class="sidebarblock small">
 <div class="content">
 <div class="paragraph">
-<p>Document generated by <a href="mailto:{email}">Jean-Michel Bruel (<a href="mailto:bruel@irit.fr">bruel@irit.fr</a>)</a> via <a href="http://asciidoctor.org/">Asciidoctor</a>
-(version <code>2.0.10</code>) from <a href="https://github.com/mojavelinux">Dan Allen</a>.
+<p>Document generated by <a href="mailto:{email}">Thierry Val (<a href="mailto:thierry.val@univ-tlse2.fr">thierry.val@univ-tlse2.fr</a>)</a> via <a href="http://asciidoctor.org/">Asciidoctor</a>
+(version <code>2.0.11</code>) from <a href="https://github.com/mojavelinux">Dan Allen</a>.
 This document is free to use under 'Licence Creative Commons' licence.
 <span class="image"><a class="image" href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="data:image/png;base64,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" alt="Licence Creative Commons"></a></span></p>
 </div>
@@ -1671,8 +1673,8 @@ This document is free to use under 'Licence Creative Commons' licence.
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 1.9.1<br>
-Last updated 2020-01-16 11:02:26 +0100
+Version 2.1.0<br>
+Last updated 2021-01-04 14:54:37 +0100
 </div>
 </div>
 </body>
