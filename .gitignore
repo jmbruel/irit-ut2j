@@ -4,3 +4,4 @@
 /_site/
 /_tmp/
 /Gemfile.lock
+.vscode
